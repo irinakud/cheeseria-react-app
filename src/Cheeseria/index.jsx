@@ -1,13 +1,15 @@
 import React, { useState, useEffect }  from 'react';
+import { CHEESERIA_API } from '../constants';
 import {Cheese} from './Cheese';
 import {PriceCalculator} from './PriceCalculator';
 
+//TODO: add styles, migrate to typescript
 export const Cheeseria = () => {
 const [error, setError] = useState(null);
     const [isLoaded, setIsLoaded] = useState(false);
     const [cheeses, setCheeses] = useState([]);
     useEffect(() => {
-        fetch("/cheeses")
+        fetch(`${CHEESERIA_API}/cheeses`)
             .then(res => res.json())
             .then(
                 (data) => {
