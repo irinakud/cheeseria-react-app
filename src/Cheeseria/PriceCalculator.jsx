@@ -1,14 +1,11 @@
 import React, { useState } from 'react';
+import calculatePrice from './calculatePrice';
 
 export const PriceCalculator = ({pricePerKilo}) => {
     const [totalPrice, setTotalPrice] = useState(0);
 
     const onAmountChange = (amount) => {
-
-        console.log(amount);
-        console.log(pricePerKilo);
-
-        setTotalPrice(amount*pricePerKilo);
+        setTotalPrice(calculatePrice(amount, pricePerKilo));
     }
 
     return (

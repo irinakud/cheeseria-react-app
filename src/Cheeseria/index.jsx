@@ -5,7 +5,7 @@ import {PriceCalculator} from './PriceCalculator';
 
 //TODO: add styles, migrate to typescript
 export const Cheeseria = () => {
-const [error, setError] = useState(null);
+    const [error, setError] = useState(null);
     const [isLoaded, setIsLoaded] = useState(false);
     const [cheeses, setCheeses] = useState([]);
     useEffect(() => {
@@ -27,14 +27,14 @@ const [error, setError] = useState(null);
     if (!isLoaded) return <div>Loading...</div>;
 
     return (
-            <ul>
-                {cheeses.map(cheese => (
-                <li key={cheese.id}>
-                    <Cheese cheese={cheese} />
-                    <PriceCalculator pricePerKilo={cheese.pricePerKilo}/>
-                </li>
-                ))}
-            </ul>
+        <ul>
+            {cheeses.map(cheese => (
+            <li key={cheese.id} data-testid={`${cheese.type}-test-id`}>
+                <Cheese cheese={cheese} />
+                <PriceCalculator pricePerKilo={cheese.pricePerKilo}/>
+            </li>
+            ))}
+        </ul>
     );
 }
 export default Cheeseria;

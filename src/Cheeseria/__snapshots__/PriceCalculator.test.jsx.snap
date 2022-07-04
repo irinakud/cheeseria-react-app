@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PriceCalculator can render 1`] = `
+<body>
+  <div>
+    <div>
+      <div>
+        Enter amount (in kg):
+        <input />
+      </div>
+      <div>
+        Total Price: 
+        0
+      </div>
+    </div>
+  </div>
+</body>
+`;

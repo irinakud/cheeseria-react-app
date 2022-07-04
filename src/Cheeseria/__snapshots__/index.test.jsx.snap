@@ -1,0 +1,185 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Cheeseria can render 1`] = `
+<body>
+  <div>
+    <ul>
+      <li
+        data-testid="gouda-test-id"
+      >
+        <div>
+          <h3>
+            Type: 
+            gouda
+          </h3>
+          <div>
+            <img
+              alt="gouda"
+              src="https://cheese.com/media/img/cheese/GOUDA_SqYJjRh.jpg"
+              style="height: 200px;"
+            />
+          </div>
+          <div>
+            Color: 
+            yellow
+          </div>
+          <div>
+            Price per kilo: 
+            81
+          </div>
+        </div>
+        <div>
+          <div>
+            Enter amount (in kg):
+            <input />
+          </div>
+          <div>
+            Total Price: 
+            0
+          </div>
+        </div>
+      </li>
+      <li
+        data-testid="mozzarella-test-id"
+      >
+        <div>
+          <h3>
+            Type: 
+            mozzarella
+          </h3>
+          <div>
+            <img
+              alt="mozzarella"
+              src="https://cheese.com/media/img/cheese/Mozzarella.jpg"
+              style="height: 200px;"
+            />
+          </div>
+          <div>
+            Color: 
+            white
+          </div>
+          <div>
+            Price per kilo: 
+            17
+          </div>
+        </div>
+        <div>
+          <div>
+            Enter amount (in kg):
+            <input />
+          </div>
+          <div>
+            Total Price: 
+            0
+          </div>
+        </div>
+      </li>
+      <li
+        data-testid="brie-test-id"
+      >
+        <div>
+          <h3>
+            Type: 
+            brie
+          </h3>
+          <div>
+            <img
+              alt="brie"
+              src="https://cheese.com/media/img/cheese/Brie_PDCo3RG.jpg"
+              style="height: 200px;"
+            />
+          </div>
+          <div>
+            Color: 
+            yellow
+          </div>
+          <div>
+            Price per kilo: 
+            100
+          </div>
+        </div>
+        <div>
+          <div>
+            Enter amount (in kg):
+            <input />
+          </div>
+          <div>
+            Total Price: 
+            0
+          </div>
+        </div>
+      </li>
+      <li
+        data-testid="mascarpone-test-id"
+      >
+        <div>
+          <h3>
+            Type: 
+            mascarpone
+          </h3>
+          <div>
+            <img
+              alt="mascarpone"
+              src="https://cheese.com/media/img/cheese/mascarpone.jpg"
+              style="height: 200px;"
+            />
+          </div>
+          <div>
+            Color: 
+            white
+          </div>
+          <div>
+            Price per kilo: 
+            340
+          </div>
+        </div>
+        <div>
+          <div>
+            Enter amount (in kg):
+            <input />
+          </div>
+          <div>
+            Total Price: 
+            0
+          </div>
+        </div>
+      </li>
+      <li
+        data-testid="cheddar-test-id"
+      >
+        <div>
+          <h3>
+            Type: 
+            cheddar
+          </h3>
+          <div>
+            <img
+              alt="cheddar"
+              src="https://cheese.com/media/img/cheese/wiki/cheddar.jpg"
+              style="height: 200px;"
+            />
+          </div>
+          <div>
+            Color: 
+            yellow
+          </div>
+          <div>
+            Price per kilo: 
+            10
+          </div>
+        </div>
+        <div>
+          <div>
+            Enter amount (in kg):
+            <input />
+          </div>
+          <div>
+            Total Price: 
+            0
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</body>
+`;
