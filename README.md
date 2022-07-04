@@ -1,70 +1,44 @@
-# Getting Started with Create React App
+# About Cheeseria React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a POC of a FE of a Cheeseria showing a list of cheeses retrieved from the Cheeseria API server.
+It also has a capability to calculate the price of a cheese based on the chosen amount and price per kilo for that cheese.
 
-## Available Scripts
+## To run the app in the development mode:
 
-In the project directory, you can run:
+```
+npm run start
+```
 
-### `npm start`
+Open [http://localhost:3001](http://localhost:3001) to view it in your browser.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## To run the app in the Docker container:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Build the Docker image:
 
-### `npm test`
+```
+docker build -t cheeseria-react-app-prod .
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Run the Docker image:
 
-### `npm run build`
+```
+docker run -p 1337:80 -it cheeseria-react-app-prod
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Open [http://localhost:1337](http://localhost:1337) to view it in your browser.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## To run the app in the Docker container using docker-compose:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```
+docker-compose up -d
+```
 
-### `npm run eject`
+Open [http://localhost:1337](http://localhost:1337) to view it in your browser.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## TODOs:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. The Cheeseria API server URI is hardcoded as `export const CHEESERIA_API = "http://localhost:3000";`
+2. More unit tests to add
+3. Migrate to typescript
+4. PriceCalculator is supposed to be an optional addition - this could be implemented using a flag set by the user, or via a federated module if preferred. To enable that, PriceCalculator was implemented as an isolated component - can become optional at any time.
