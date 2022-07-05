@@ -42,3 +42,4 @@ Open [http://localhost:1337](http://localhost:1337) to view it in your browser.
 2. More unit tests to add
 3. Migrate to typescript
 4. PriceCalculator is supposed to be an optional addition - this could be implemented using a flag set by the user, or via a federated module if preferred. To enable that, PriceCalculator was implemented as an isolated component - can become optional at any time.
+5. Research if Next.js is a better way to create the app.
